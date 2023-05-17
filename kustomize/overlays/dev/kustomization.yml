@@ -6,4 +6,4 @@ patches:
 commonLabels:
   app: hello-world
 
-nameSuffix: v1
+nameSuffix: -v1
