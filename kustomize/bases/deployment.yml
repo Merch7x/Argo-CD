@@ -2,12 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-world
-  labels:
-    app: hello-world
 spec:
-  selector:
-    matchLabels:
-      app: hello-world
   replicas: 4
   strategy:
     rollingUpdate:
@@ -15,9 +10,6 @@ spec:
       maxUnavailable: 25%
     type: RollingUpdate
   template:
-    metadata:
-      labels:
-        app: hello-world
     spec:
       containers:
       - name: svc 

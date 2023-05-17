@@ -2,3 +2,8 @@ bases:
   - ../../bases
 patches:
   - replicas.yml
+  
+commonLabels:
+  app: hello-world
+
+nameSuffix: v1 
